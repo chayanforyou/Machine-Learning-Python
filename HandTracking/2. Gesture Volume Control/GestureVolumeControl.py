@@ -18,7 +18,7 @@ from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 wCam, hCam = 640, 480
 ################################
  
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
 cap.set(4, hCam)
 pTime = 0
@@ -54,7 +54,7 @@ while True:
         cv2.circle(img, (cx, cy), 15, (255, 0, 255), cv2.FILLED)
  
         length = math.hypot(x2 - x1, y2 - y1)
-        # print(length)
+        print(f'Length: {length}')
  
         # Hand range 50 - 300
         # Volume Range -65 - 0
