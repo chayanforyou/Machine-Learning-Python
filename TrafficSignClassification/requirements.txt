@@ -1,0 +1,4 @@
+# NOTE(pvaneck): tensorflow requires a lower version of numpy than the latest, so just use the
+# version that tensorflow wants by removing the numpy dependency in this file.
+tensorflow==2.2.1
+keras>=2.3.1
